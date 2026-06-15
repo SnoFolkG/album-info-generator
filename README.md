@@ -1,2 +1,3 @@
 # album-info-generator
-Album info generator (HTML) for snofolk.space
+TrackList Convertor (CSV to JSON) for snofolk.space
+VERSION: 1.0

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSV → JSON Tracks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+    <h1 class="site-title" id="header">CSV → JSON Tracks Converter</h1>
+</header>
+
+<body>
+
+    <main>
+        <section>
+            <textarea class="text-area" id="csv" rows="15" cols="100">Paste your .csv here...</textarea>
+        </section>
+
+        <br><br>
+
+        <button class="button" onclick="convert()">Convert</button>
+
+        <br><br>
+
+        <section>
+            <textarea class="text-area" id="result" rows="20" cols="100">Copy your tracklist.json here...</textarea>
+        </section>
+    </main>
+
+    <footer>Made by SnoFolk. For <a class="link" href="https://snofolk.space/" target="_blank">snofolk.space</a>. Site
+        Version 1.0
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
