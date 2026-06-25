@@ -1,6 +1,9 @@
 function convert() {
     const csv = document.getElementById("csv").value;
-    const lines = csv.trim().split("\n");
+    const lines = csv
+        .replace(/\r/g, "") // защита от Windows CRLF
+        .trim()
+        .split("\n");
 
     const tracks = [];
 
@@ -10,8 +13,8 @@ function convert() {
         if (parts.length < 5) continue;
 
         tracks.push({
-            title: parts[1].trim(),
-            duration: parts[4].trim()
+            title: parts[1]?.trim() || "",
+            duration: parts[4]?.trim() || ""
         });
     }
 
